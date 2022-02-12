@@ -1,6 +1,6 @@
 puts "Hello, World!"
 
-puts "The sum of 2 and 3 is 4."
+puts "The sum of 1 and 3 is 4."
 
 argv0 = ARGV[0]
 argv1 = ARGV[1]
