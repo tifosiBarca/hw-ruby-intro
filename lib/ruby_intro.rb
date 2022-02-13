@@ -11,6 +11,18 @@ end
 
 def max_2_sum arr
   # YOUR CODE HERE
+  len = arr.length()
+  case len
+  when 0
+    return 0
+  when 1
+    return arr[0]
+  when 2
+    return arr.inject(:+)
+  else 
+    sorted = arr.sort
+    return sorted[-1]+sorted[-2]
+end
 end
 
 def sum_to_n? arr, n
