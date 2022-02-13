@@ -49,10 +49,16 @@ end
 
 def binary_multiple_of_4? s
   # YOUR CODE HERE
+  if (s.to_i.remainder(4)==0) && (s.delete('01') == '') && (s!='') then
+    return true
+  else
+    return false
+  end
 end
 
 # Part 3
 
 class BookInStock
 # YOUR CODE HERE
+
 end
