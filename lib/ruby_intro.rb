@@ -20,24 +20,31 @@ def max_2_sum arr
   when 2
     return arr.inject(:+)
   else 
-    sorted = arr.sort
-    return sorted[-1]+sorted[-2]
-end
+    sorted_arr = arr.sort
+    return sorted_arr[-1]+sorted_arr[-2]
+  end
 end
 
 def sum_to_n? arr, n
   # YOUR CODE HERE
-  
+  return false if arr.empty?
+  arr.combination(2).any? {|x, y| x + y == n}
 end
 
 # Part 2
 
 def hello(name)
   # YOUR CODE HERE
+  return ("Hello, "+ name)
 end
 
 def starts_with_consonant? s
   # YOUR CODE HERE
+  vol = ['A','a','E','e','I','i','O','o','U','u']
+  small = ('a'..'z').to_a
+  cap = ('A'..'Z').to_a
+  cons = small+cap-vol
+  return cons.include? s[0]
 end
 
 def binary_multiple_of_4? s
