@@ -2,8 +2,11 @@
 
 # Part 1
 
+print("hello")
+
 def sum arr
   # YOUR CODE HERE
+  arr.inject(0,:+)
 end
 
 def max_2_sum arr
