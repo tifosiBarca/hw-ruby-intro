@@ -2,7 +2,7 @@
 
 # Part 1
 
-print("hello")
+#print("hello ruby")
 
 def sum arr
   # YOUR CODE HERE
@@ -60,5 +60,41 @@ end
 
 class BookInStock
 # YOUR CODE HERE
+def initialize(isbn,price)
+  @isbn = isbn
+  @price = price
+  
+  if (@isbn==="" || @price<=0) then
+      raise ArgumentError
+  end
+    
+def isbn=(isbn)
+    @isbn = isbn
+    if (@isbn ==="")
+        raise ArgumentError
+    end 
+end 
+
+def price=(price)
+    @price = price
+    if (@price<=0)
+        raise ArgumentError
+    end 
+end 
+
+def isbn()
+    return @isbn
+end 
+
+def price()
+    return @price
+end 
+  
+def price_as_string
+    return "$" + format("%.2f",@price)
+    
+end 
+
+end
 
 end
