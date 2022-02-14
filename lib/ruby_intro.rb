@@ -2,7 +2,7 @@
 
 # Part 1
 
-#print("hello ruby")
+print("hello ruby")
 
 def sum arr
   # YOUR CODE HERE
